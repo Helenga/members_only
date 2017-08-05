@@ -1,0 +1,9 @@
+<div class='header'>
+<% if logged_in? %>
+	<h3><%= link_to 'Create rumor', new_rumor_path %>~~~<%= link_to 'Log out', logout_path, method: 'delete' %></h3>
+<% else %>
+	<h3><%= link_to 'Sign up', new_user_path %> or <%= link_to 'Log in', login_url %></h3>
+<% end %>
+</div>
+
+

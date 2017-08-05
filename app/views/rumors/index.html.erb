@@ -1,0 +1,8 @@
+<ul>
+<% @rumors.each do |rumor| %>
+	<li>About <%= rumor.about %> ~~~> <%= rumor.body %><br><hr>
+	<% if logged_in? %>
+		murmured <%= rumor.author %></li>
+	<% end %>
+<% end %>
+</ul>

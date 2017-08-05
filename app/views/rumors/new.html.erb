@@ -1,0 +1,9 @@
+<%= form_for @rumor do |f| %>
+	<%= f.label 'Want to rumor about:' %><br>
+	<%= f.text_field :about %><br>
+	
+	<%= f.label 'There is something in the air...' %><br>
+	<%= f.text_area :body %><br>
+	
+	<%= f.submit 'Share the rumor' %>
+<% end %>
